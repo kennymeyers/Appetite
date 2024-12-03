@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0ED875302CFE4B7400684DF3 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED8752F2CFE4B7400684DF3 /* NukeUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E3219532CFE422400E7D589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E3219232CFE3C9200E7D589 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E32192A2CFE3C9200E7D589;
+			remoteInfo = Appetite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E0D86FA2CFE9957008FF55A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E32192B2CFE3C9200E7D589 /* Appetite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E32194F2CFE422400E7D589 /* AppetiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppetiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E702D312CFED4E1005D3BF9 /* Appetite.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appetite.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +45,23 @@
 			path = Appetite;
 			sourceTree = "<group>";
 		};
+		0E3219502CFE422400E7D589 /* AppetiteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AppetiteTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0E3219282CFE3C9200E7D589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED875302CFE4B7400684DF3 /* NukeUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E32194C2CFE422400E7D589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +74,9 @@
 		0E3219222CFE3C9200E7D589 = {
 			isa = PBXGroup;
 			children = (
+				0E702D312CFED4E1005D3BF9 /* Appetite.xctestplan */,
 				0E32192D2CFE3C9200E7D589 /* Appetite */,
+				0E3219502CFE422400E7D589 /* AppetiteTests */,
 				0E32192C2CFE3C9200E7D589 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0E32192B2CFE3C9200E7D589 /* Appetite.app */,
+				0E32194F2CFE422400E7D589 /* AppetiteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +100,7 @@
 				0E3219272CFE3C9200E7D589 /* Sources */,
 				0E3219282CFE3C9200E7D589 /* Frameworks */,
 				0E3219292CFE3C9200E7D589 /* Resources */,
+				0E0D86FA2CFE9957008FF55A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,10 +111,34 @@
 			);
 			name = Appetite;
 			packageProductDependencies = (
+				0ED8752F2CFE4B7400684DF3 /* NukeUI */,
 			);
 			productName = Appetite;
 			productReference = 0E32192B2CFE3C9200E7D589 /* Appetite.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0E32194E2CFE422400E7D589 /* AppetiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3219552CFE422400E7D589 /* Build configuration list for PBXNativeTarget "AppetiteTests" */;
+			buildPhases = (
+				0E32194B2CFE422400E7D589 /* Sources */,
+				0E32194C2CFE422400E7D589 /* Frameworks */,
+				0E32194D2CFE422400E7D589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E3219542CFE422400E7D589 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0E3219502CFE422400E7D589 /* AppetiteTests */,
+			);
+			name = AppetiteTests;
+			packageProductDependencies = (
+			);
+			productName = AppetiteTests;
+			productReference = 0E32194F2CFE422400E7D589 /* AppetiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +153,10 @@
 					0E32192A2CFE3C9200E7D589 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					0E32194E2CFE422400E7D589 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 0E32192A2CFE3C9200E7D589;
+					};
 				};
 			};
 			buildConfigurationList = 0E3219262CFE3C9200E7D589 /* Build configuration list for PBXProject "Appetite" */;
@@ -94,18 +168,29 @@
 			);
 			mainGroup = 0E3219222CFE3C9200E7D589;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0ED8752E2CFE4B7400684DF3 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0E32192C2CFE3C9200E7D589 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0E32192A2CFE3C9200E7D589 /* Appetite */,
+				0E32194E2CFE422400E7D589 /* AppetiteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0E3219292CFE3C9200E7D589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E32194D2CFE422400E7D589 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +207,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E32194B2CFE422400E7D589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E3219542CFE422400E7D589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E32192A2CFE3C9200E7D589 /* Appetite */;
+			targetProxy = 0E3219532CFE422400E7D589 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0E3219372CFE3C9300E7D589 /* Debug */ = {
@@ -260,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,6 +368,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kennymeyers.Appetite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,6 +394,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,9 +402,49 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kennymeyers.Appetite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0E3219562CFE422400E7D589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 244JS7HLD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kennymeyers.AppetiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appetite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Appetite";
+			};
+			name = Debug;
+		};
+		0E3219572CFE422400E7D589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 244JS7HLD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kennymeyers.AppetiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appetite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Appetite";
 			};
 			name = Release;
 		};
@@ -323,7 +469,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0E3219552CFE422400E7D589 /* Build configuration list for PBXNativeTarget "AppetiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3219562CFE422400E7D589 /* Debug */,
+				0E3219572CFE422400E7D589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0ED8752E2CFE4B7400684DF3 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0ED8752F2CFE4B7400684DF3 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ED8752E2CFE4B7400684DF3 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E3219232CFE3C9200E7D589 /* Project object */;
 }

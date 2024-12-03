@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "0FD0C795-10A7-4FC2-901A-24D50BC74A15",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Appetite.xcodeproj",
+      "identifier" : "0E32192A2CFE3C9200E7D589",
+      "name" : "Appetite"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Appetite.xcodeproj",
+        "identifier" : "0E32194E2CFE422400E7D589",
+        "name" : "AppetiteTests"
+      }
+    }
+  ],
+  "version" : 1
+}
