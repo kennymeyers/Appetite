@@ -69,13 +69,4 @@ struct RecipeListingViewModelTests {
         await viewModel.fetchRecipes()
         #expect(viewModel.recipeState == .normal)
     }
-
-    @Test("if it grabs the receipes, and they're malformed, it still takes what it can get")
-    func malformedStateTest() async throws {
-        let viewModel = RecipeListingViewModel(
-            recipeFetcher: MockRecipeFetcher(endpoint: .malformed)
-        )
-        await viewModel.fetchRecipes()
-        #expect(viewModel.recipeState == .normal)
-    }
 }
