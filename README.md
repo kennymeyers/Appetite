@@ -1,4 +1,6 @@
-# ### Steps to Run the App
+# Appetite
+
+### Steps to Run the App
 
 1. Clone the repository
 2. Press the run button
